@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* float
+        1. float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다. 
+        2. float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠있다.*/
+      .wrap {
+        background-color: gray;
+      }
+
+      div.wrap div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .box1 {
+        background-color: red;
+        float: left;
+      }
+
+      .box2 {
+        background-color: green;
+        float: left;
+      }
+
+      .box3 {
+        background-color: blue;
+        float: right;
+      }
+
+      div.wrap p {
+        clear: both;
+      } /* float 해제*/
+
+      img {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <p>inline</p>
+    </div>
+
+    <div class="other" style="background-color: yellow; height: 500px">
+      <img src="images/gosu.jpg" alt="고수 영화배우" />
+      <p>
+        향년 96세로 서거한 엘리자베스 2세 영국 여왕이 단 두 점의 보석만 착용한
+        상태로 묘에 안장된다. 14일 BBC 등 현지 언론에 따르면 엘리자베스 여왕은
+        금색 결혼반지와 진주 귀걸이를 착용한 상태로 오는 19일 윈저성 지하 묘에
+        안장될 예정이다. 엘리자베스 여왕은 브로치 98개, 귀걸이 34쌍, 반지 15개
+        등 300여 점 등 다수의 호화 보석을 소유한 것으로 알려졌다. 이 보석들은
+        버킹엄 궁전의 여왕 갤러리에 보관돼있다. 그중 진주 귀걸이는 여왕이 생전
+        가장 좋아하던 보석으로 유명하다. 특히 여왕은 공식 석상에서 거의 항상
+        진주 귀걸이를 착용해왔다.
+      </p>
+    </div>
+  </body>
+</html>
